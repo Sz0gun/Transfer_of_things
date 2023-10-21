@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'register_thing',
+    'transfer_thing',
     'phonenumber_field',
     'order_registration',
 ]

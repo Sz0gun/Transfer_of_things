@@ -1,7 +1,7 @@
 from django.db import models
 from django.core.validators import RegexValidator
 from django.contrib.auth import get_user_model
-from django.utils.translation import ugettext as _
+from django.utils.translation import gettext_lazy as _
 from phonenumber_field.modelfields import PhoneNumberField
 
 # Create your models here.
@@ -14,12 +14,12 @@ TYPE_CHOISES = (
 
 
 class Category(models.Model):
-    name = models.Charfield(max_length=64)
+    name = models.CharField(max_length=64)
 
 
 class Institution(models.Model):
-    name = models.Charfield(max_lenght=64)
-    description = models.Textfield()
+    name = models.CharField(max_length=64)
+    description = models.TextField()
     type = models.IntegerField(choices=TYPE_CHOISES, default=1)
     categories = models.ManyToManyField(Category, related_name='category')
 
@@ -30,11 +30,11 @@ class Institution(models.Model):
 class Donation(models.Model):
     quantity = models.IntegerField()
     categories = models.ManyToManyField(Category, related_name='donation_category')
-    institution = models.Foreighnkey(Institution, on_delete=models.CASCADE)
-    street = models.Textfield()
+    institution = models.ForeignKey(Institution, on_delete=models.CASCADE)
+    street = models.TextField()
     phone = PhoneNumberField()
-    city = models.Charfield(_("city"), max_length=64)
-    zip_code = models.Charfield(_("zip_code"), max_length=5)
+    city = models.CharField(_("city"), max_length=64)
+    zip_code = models.CharField(_("zip_code"), max_length=5)
     pick_up_date = models.DateField()
     pick_up_time = models.TimeField()
     pick_up_comment = models.TextField()

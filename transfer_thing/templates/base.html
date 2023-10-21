@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pl">
+    {% include 'header.html' %}
+    <body>
+        {% block body-head %}
+            {% include 'userlogin_header.html' %}
+        {% else %}
+            {% include 'landingpage_header.html' %}
+        {% endif %}
+        {% enblock body-head %}
+        {% block body-content %}
+        {% enblock body-content %}
+    </body>
+    {% block footer %}
+    {% include 'footer.html' %}
+    {% endblock footer %}
+</html>
