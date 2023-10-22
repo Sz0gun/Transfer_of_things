@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block body-content %}
-
+<h1>Test</h1>
     <section id="stats" class="">
       <div class="">
         <div class="">
@@ -48,13 +48,13 @@
       <a href="#" class="">Załóż konto</a>
     </section>
 
-    <section id="about-us" class="">
-      <div class="">
+    <section id="about-us" class="about-us">
+      <div class="about-us--text">
         <h2>O nas</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas vitae animi rem pariatur incidunt libero optio esse quisquam illo omnis.</p>
-        <img src="" class="" alt="Signature" />
+        <img src="{% static 'images/signature.svg' %}" class="" alt="Signature" />
       </div>
-      <div class=""><img src="" alt="People in circle" /></div>
+      <div class="about-us--image"><img src="{% static 'images/about-us.jpg' %}" alt="People in circle" /></div>
     </section>
 
      <section id="help" class="">
