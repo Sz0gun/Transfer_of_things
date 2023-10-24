@@ -567,6 +567,84 @@ header .slogan--item {
     }
 }
 
+.stats {
+    background-image: url(../images/stats-bg.jpg);
+}
+
+.stats--item {
+    text-align: center;
+    padding: 0 2vw;
+}
+
+.steps {
+    margin: 60px 0;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.steps--container {
+    margin: 0 auto;
+    padding: 50px 0;
+    max-width: 1100px;
+    width: 100%;
+    background-color: #ebebeb;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.steps--item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertival;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 35px;
+
+}
+
+.steps--item .icon {
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.steps--item .icon--hands {
+    background-image: url("../images/icon-hands.png");
+}
+
+.steps--item .icon--arrow {
+    background-image: url("../images/icon-arrow.png");
+}
+
+.steps--item .icon--glasses {
+    background-image: url("../images/icon-glasses.png");
+}
+
+.steps--item .icon--courier {
+    background-image: url("../images/icon-courier.png");
+}
+
+.steps--item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
+
+
 /* line 1, scss/modules/homepage-sections/_about-us.scss */
 .about-us {
     display: -webkit-box;
