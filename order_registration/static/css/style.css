@@ -645,7 +645,10 @@ header .slogan--item {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> index_html
 .help {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -663,9 +666,84 @@ header .slogan--item {
     margin: 60px auto;
 }
 
+.help--buttons {
+    padding: 0;
+    margin: 20px 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
 
+<<<<<<< HEAD
+>>>>>>> index_html
+=======
+.help--buttons li {
+    margin: 0 10px;
+}
 >>>>>>> index_html
 
+.help--slides {
+    width: 100%;
+    margin-top: 30px;
+    display: none;
+}
+
+.help--slides.active {
+    display: block
+}
+
+.help--slides > p {
+    margin: 0 auto 30px;
+    max-width: 630px;
+    width: 100%;
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 2em;
+}
+
+.help--slides ul {
+    list-style: none;
+    padding: 0;
+}
+
+.help--slides-items li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom:  35px;
+}
+
+.help--slides-items .col {
+    width: 100%;
+}
+
+.help--slide-items .col .title {
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.help--slide-items .col .subtitle {
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-style: ligh;
+    font-size: 1.2rem
+}
+
+.help--slides-items .col .text {
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
 /* line 1, scss/modules/homepage-sections/_about-us.scss */
 .about-us {
     display: -webkit-box;
