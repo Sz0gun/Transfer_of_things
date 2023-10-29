@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'transfer_thing',
     'phonenumber_field',
     'order_registration',
+    'account',
 ]
 
 MIDDLEWARE = [
