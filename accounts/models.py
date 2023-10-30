@@ -9,7 +9,7 @@ class CustomUserManager(BaseUserManager):
     """Define a model manager for User with the given email and password."""
 
     def _create_user(self, email, password=None, **extra_fields):
-        """Create and save a User with the goven email and password."""
+        """Create and save a User with the given email and password."""
         if not email:
             raise ValueError('The given email must be set!')
         email = self.normalize_email(email)
@@ -24,6 +24,7 @@ class CustomUserManager(BaseUserManager):
         return self._create_user(email, password, **extra_fields)
     
     def create_superuser(self, email, password=None, **extra_fields):
+        """Create and save a Super User with the given email and password"""
         extra_fields.setdefault('is_stuff', True)
         extra_fields.setdefault('is_superuser', True)
 
