@@ -19,7 +19,10 @@ from django.urls import path
 
 from order_registration.views import ShowPage
 
+from accounts.views import UserCreateView
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('test/', ShowPage.as_view()),
+    path('register/', UserCreateView.as_view()),
 ]
