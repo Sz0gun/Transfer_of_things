@@ -23,6 +23,6 @@ from accounts.views import UserCreateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('test/', ShowPage.as_view()),
+    path('home/', ShowPage.as_view(), name='home'),
     path('register/', UserCreateView.as_view()),
 ]

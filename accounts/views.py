@@ -1,3 +1,5 @@
+from django.forms.models import BaseModelForm
+from django.http import HttpResponse
 from django.shortcuts import render
 from django.urls import reverse_lazy
 
@@ -19,5 +21,12 @@ class UserCreateView(CreateView):
     model = CustomUser
     template_name = 'register.html'
     form_class = UserAdminCreationForm
-    success_url = reverse_lazy('login')
+    success_url = reverse_lazy('home')
     permission_required = None
+
+    def form_valid(self, form: BaseModelForm) -> HttpResponse:
+        response = super().form_valid(form)
+        cd = form.cleaned_data
+        self.object.set_password(cd['password1'])
+        self.object.save()
+        return response
