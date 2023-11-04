@@ -30,10 +30,9 @@ Plan:
 
 
 Additional functionalities (notes in progress):
-
     - indicating that the gift has been given
     - editing your own profile
-        > confirmation/activation of the account by sending a message to the email address provided during registration
-        > handling forgotten passwords
-        > validation of correct entry of two identical passwords
-        > handling the contact form
+        - confirmation/activation of the account by sending a message to the email address provided during registration
+        - handling forgotten passwords
+        - validation of correct entry of two identical passwords
+        - handling the contact form
