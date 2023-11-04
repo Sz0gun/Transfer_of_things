@@ -1,5 +1,5 @@
 # Transfer_of_things
-Information about the Project
+Short information about the Project
 
 The aim of the project is to create a place where everyone can donate unnecessary items to trusted institutions. Thus taking a small step towards improwing communication in the community, while caring for the enviroment and caring for those in need.
 
