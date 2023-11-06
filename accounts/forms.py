@@ -7,7 +7,7 @@ from django.contrib.auth.forms import UserCreationForm
 class UserAdminCreationForm(UserCreationForm):
     """A custom form for creation new users."""
 
-    required_css_class = ...
+    # required_css_class = ...
     first_name = forms.CharField()
     last_name = forms.CharField()
 

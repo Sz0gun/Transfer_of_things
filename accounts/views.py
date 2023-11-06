@@ -24,9 +24,10 @@ class UserCreateView(CreateView):
     success_url = reverse_lazy('home')
     permission_required = None
 
-    def form_valid(self, form: BaseModelForm) -> HttpResponse:
+    def form_valid(self, form):
         response = super().form_valid(form)
         cd = form.cleaned_data
         self.object.set_password(cd['password1'])
         self.object.save()
+        print(self.object)
         return response
