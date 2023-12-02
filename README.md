@@ -1,38 +1,45 @@
 # Transfer_of_things
-Short information about the Project
+# Project Overview
 
-The aim of the project is to create a place where everyone can donate unnecessary items to trusted institutions. Thus taking a small step towards improwing communication in the community, while caring for the enviroment and caring for those in need.
+The project aims to create a platform facilitating the easy donation of unnecessary items to trusted institutions, fostering community communication, environmental responsibility, and support for those in need.
 
-Where did the idea for the project come from?
+## Origins of the Idea
 
-Problem -> 
-    Having things you want to get rid of but don't know how.
-    There are many solutions available, but many of them require additional effort and time.
+The idea emerged from the common problem of having items to discard without a clear solution. While various solutions exist, many require additional time and effort.
 
-Solution ->
-    REST API
-    Create a space where users can easily and quikly return their unwanted items to a trusted institution.
+## Proposed Solution
 
+Utilizing a REST API, the project aims to establish a space where users can quickly and easily donate their unwanted items to trusted institutions.
 
-Plan:
+## Project Plan
 
-1. Launding page that will encourage you to use the application.
-2. Admin profile
-    - login option
-    - CRUD management of administrators
-    - CRUD management of trusted institution
-    - overview of the gifts presented
-3. User profile
-    - registrate option
-    - login option
-    - adding gifts
-    - viewing the gifts submitted
+### Landing Page
 
+- Develop a compelling landing page to encourage users to use the application.
 
-Additional functionalities (notes in progress):
-    - indicating that the gift has been given
-    - editing your own profile
-        - confirmation/activation of the account by sending a message to the email address provided during registration
-        - handling forgotten passwords
-        - validation of correct entry of two identical passwords
-        - handling the contact form
+### Admin Profile
+
+- **Login Option:** Implement a secure login for administrators.
+- **CRUD Management of Administrators:** Enable the creation, reading, updating, and deleting of administrator accounts.
+- **CRUD Management of Trusted Institutions:** Provide functionality for administrators to manage trusted institutions.
+- **Overview of Gifts Presented:** Offer administrators an overview of the donated items.
+
+### User Profile
+
+- **Registration Option:** Allow users to register for a personalized experience.
+- **Login Option:** Implement a secure login for registered users.
+- **Adding Gifts:** Enable users to easily input details about items they wish to donate.
+- **Viewing Submitted Gifts:** Provide users with a feature to view the items they have submitted.
+
+### Additional Functionalities (Work in Progress)
+
+- **Gift Status Update:** Allow users or administrators to mark items as given, indicating a successful transfer.
+- **Profile Editing:** Permit users to edit their profiles.
+- **Account Confirmation:** Implement confirmation/activation emails sent to the provided email addresses during registration.
+- **Forgotten Password Handling:** Develop a system for users to reset forgotten passwords.
+- **Password Validation:** Ensure the correct entry of two identical passwords during registration.
+- **Contact Form Handling:** Implement a contact form for user inquiries or feedback.
+
+## Project Goals
+
+By streamlining the donation process and enhancing user experience, the platform aims to contribute to community well-being, environmental sustainability, and efficient item redistribution. The use of a REST API underscores the goal of creating a space where users can swiftly donate unwanted items to trusted institutions.
